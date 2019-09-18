@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    {% include "header.html" %}
+    <ul>  
+    {% for frett in frettir %}
+        <li><img src="/static/images/{{ frett[4] }}" class="formynd"><a href="frett/{{ frett[0] }}">{{ frett[1] }}</a></li>
+    {% endfor %}
+    </ul>
+    {% include "footer.html" %}
+</body>
+</html>

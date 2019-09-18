@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    {% include "header.html" %}
+ <div class="grein">
+     <div class="texti">
+    <h1 class="titill">{{ frett[1] }}</h1>
+    <p class="efni">{{ frett[2] }}</p>
+    <p class="netfang">{{ frett[3] }}</p>
+</div>
+    <div class="divmynd"><img src="/static/images/{{ frett[4] }}" class="mynd"></div>
+ </div>
+ {% include "footer.html" %}
+</body>
+</html>
